@@ -1,4 +1,0 @@
-C:/Users/ricky/CLionProjects/helloworld/cmake-build-debug/CMakeFiles/sqrt.dir
-C:/Users/ricky/CLionProjects/helloworld/cmake-build-debug/CMakeFiles/helloworld.dir
-C:/Users/ricky/CLionProjects/helloworld/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ricky/CLionProjects/helloworld/cmake-build-debug/CMakeFiles/rebuild_cache.dir
