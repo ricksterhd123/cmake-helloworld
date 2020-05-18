@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ricky/CLionProjects/helloworld/main.cpp
+sqrt.h
+C:/Users/ricky/CLionProjects/helloworld/sqrt.h
+iostream
+-
+
+C:/Users/ricky/CLionProjects/helloworld/sqrt.h
+

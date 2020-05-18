@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(helloworld)
+add_library(sqrt sqrt.cpp)
+add_executable(helloworld main.cpp)
+target_link_libraries(helloworld sqrt)
