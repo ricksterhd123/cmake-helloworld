@@ -1,9 +1,9 @@
-#include "sqrt.h"
-#include "glad/glad.h"
-#include <stdlib.h>
-#include <string>
+// #include <string>
 #include <iostream>
+#include "glad/glad.h"
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include "sqrt.h"
 
 // Is called whenever a key is pressed/released via GLFW
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
@@ -18,6 +18,7 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 
 int main(void)
 {
+    auto a = new glm::mat4x4();
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -55,7 +56,7 @@ int main(void)
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
-        glClearColor(0.0f, 0.0f, 1.0f, 0.0f);
+        glClearColor((float)glm::sin(glfwGetTime()), (float)glm::sin(glfwGetTime()), (float)glm::cos(glfwGetTime()), 0.0f);
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -66,6 +67,7 @@ int main(void)
         glfwPollEvents();
     }
 
+    delete a;
     glfwTerminate();
     return 0;
 }
